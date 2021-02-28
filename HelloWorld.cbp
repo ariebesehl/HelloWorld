@@ -2,49 +2,40 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="HelloWorldAdvanced" />
+		<Option title="HelloWorld" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Release">
-				<Option output="../HelloWorldAdvanced" prefix_auto="1" extension_auto="1" />
-				<Option working_dir=".." />
+			<Target title="exe">
+				<Option output="HelloWorld" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
-				<Option projectCompilerOptionsRelation="0" />
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-fno-exceptions" />
-			<Add option="-fexpensive-optimizations" />
-			<Add option="-flto" />
-			<Add option="-O3" />
+			<Add directory="../ZDK/ZTK" />
 			<Add option="-Wfatal-errors" />
 			<Add option="-Wextra" />
 			<Add option="-Wall" />
-			<Add directory="../ZDK/ZTK" />
-			<Add directory="../ZDK/ZTM" />
+			<Add option="-O3" />
+			<Add option="-flto" />
 		</Compiler>
 		<ResourceCompiler>
 			<Add directory="../ZDK/ZTK" />
-			<Add directory="../ZDK/ZTM" />
 		</ResourceCompiler>
 		<Linker>
-			<Add option="-O3" />
-			<Add option="-flto" />
-			<Add option="-s" />
-			<Add option="-lZTM -lZTK" />
 			<Add directory=".." />
+			<Add option="-lZTM -lZTL -lZTK" />
+			<Add option="-O3" />
+			<Add option="-s" />
+			<Add option="-flto" />
 		</Linker>
-		<Unit filename="HWA.c">
+		<Unit filename="HelloWorld.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="HWA.h" />
-		<Unit filename="HelloWorldAdvanced.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="HelloWorldResources.rc">
+		<Unit filename="HelloWorld.h" />
+		<Unit filename="HelloWorld.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
 		<Extensions>

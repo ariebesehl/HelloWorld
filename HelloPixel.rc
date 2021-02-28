@@ -1,0 +1,6 @@
+
+#include <ZTK__Res.h>
+
+#ifdef ZTM__OS__WINDOWS
+ZTK_ICON_INTEGRATED ICON "HelloPixel.ico"
+#endif // ZTM__OS__
