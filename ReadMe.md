@@ -2,7 +2,7 @@
 
 
 
-Hello World examples with [ZaidaTek Development Kit](https://github.com/ZaidaTek/ZDK)
+Hello World examples using [ZaidaTek Development Kit](https://github.com/ZaidaTek/ZDK)
 
 
 
@@ -19,16 +19,16 @@ Fully compiled examples that include the necessary ZDK runtimes, can be download
 
 ## Hello Minimal
 
-![](https://raw.githubusercontent.com/ariebesehl/HelloWorld/main/__screenshot-minimal-1.png)
+![](https://raw.githubusercontent.com/ariebesehl/HelloWorld/main/doc/__screenshot-minimal-1.png)
 
 A minimal example, showing how to open a window presenting a "Hello World" text in 14 lines of code.
 
-![](https://raw.githubusercontent.com/ariebesehl/HelloWorld/main/__screenshot-minimal-2.png)
+![](https://raw.githubusercontent.com/ariebesehl/HelloWorld/main/doc/__screenshot-minimal-2.png)
 
 
 ## Hello Pixel
 
-![](https://raw.githubusercontent.com/ariebesehl/HelloWorld/main/__screenshot-pixel.png)
+![](https://raw.githubusercontent.com/ariebesehl/HelloWorld/main/doc/__screenshot-pixel.png)
 
 An example showing how to create pixel graphics, and present them on screen, using OpenGL as a renderer.
 
@@ -37,20 +37,20 @@ Each pixel is displayed using a randomized color every frame.
 
 ## Hello UI
 
-![](https://raw.githubusercontent.com/ariebesehl/HelloWorld/main/__screenshot-ui.png)
+![](https://raw.githubusercontent.com/ariebesehl/HelloWorld/main/doc/__screenshot-ui.png)
 
 An example showing how to use the ZUI integrated graphical user interface.
 
 
 ## Hello World
 
-![](https://raw.githubusercontent.com/ariebesehl/HelloWorld/main/__screenshot-world.png)
+![](https://raw.githubusercontent.com/ariebesehl/HelloWorld/main/doc/__screenshot-world.png)
 
 A somewhat more elaborate example, showing how to load bitmap-graphics, and animate them on screen using an OpenGL renderer.
 
 
 ## License
 
-Copyright (C) 2019-2021 ZaidaTek and Andreas Riebesehl
+Copyright (C) 2019-2025 ZaidaTek and Andreas Riebesehl
 
 This work is licensed under: This work is presently unlicensed.
