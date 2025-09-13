@@ -14,23 +14,32 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add directory="../ZDK/ZTK" />
-			<Add directory="../ZDK/ZUI" />
 			<Add option="-Wfatal-errors" />
 			<Add option="-Wextra" />
 			<Add option="-Wall" />
 			<Add option="-O3" />
 			<Add option="-flto" />
+			<Add option="-fexpensive-optimizations" />
+			<Add directory="../ZDK/ZTM" />
+			<Add directory="../ZDK/ZTL" />
+			<Add directory="../ZDK/ZTK" />
+			<Add directory="../ZDK/ZUI" />
 		</Compiler>
 		<ResourceCompiler>
 			<Add directory="../ZDK/ZTK" />
 		</ResourceCompiler>
 		<Linker>
-			<Add directory=".." />
-			<Add option="-lZTM -lZTL -lZTK -lZUI" />
 			<Add option="-O3" />
-			<Add option="-s" />
 			<Add option="-flto" />
+			<Add option="-s" />
+			<Add directory="../ZDK/ZTM" />
+			<Add directory="../ZDK/ZTL" />
+			<Add directory="../ZDK/ZTK" />
+			<Add directory="../ZDK/ZUI" />
+			<Add option="-lZTM" />
+			<Add option="-lZTL" />
+			<Add option="-lZTK" />
+			<Add option="-lZUI" />
 		</Linker>
 		<Unit filename="HelloUI.c">
 			<Option compilerVar="CC" />

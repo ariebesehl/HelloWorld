@@ -14,22 +14,29 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add directory="../ZDK/ZTK" />
 			<Add option="-Wfatal-errors" />
 			<Add option="-Wextra" />
 			<Add option="-Wall" />
 			<Add option="-O3" />
 			<Add option="-flto" />
+			<Add option="-fexpensive-optimizations" />
+			<Add directory="../ZDK/ZTM" />
+			<Add directory="../ZDK/ZTL" />
+			<Add directory="../ZDK/ZTK" />
 		</Compiler>
 		<ResourceCompiler>
 			<Add directory="../ZDK/ZTK" />
 		</ResourceCompiler>
 		<Linker>
-			<Add directory=".." />
-			<Add option="-lZTM -lZTL -lZTK" />
 			<Add option="-O3" />
-			<Add option="-s" />
 			<Add option="-flto" />
+			<Add option="-s" />
+			<Add directory="../ZDK/ZTM" />
+			<Add directory="../ZDK/ZTL" />
+			<Add directory="../ZDK/ZTK" />
+			<Add option="-lZTM" />
+			<Add option="-lZTL" />
+			<Add option="-lZTK" />
 		</Linker>
 		<Unit filename="HelloMinimal.c">
 			<Option compilerVar="CC" />

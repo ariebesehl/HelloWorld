@@ -8,7 +8,7 @@
 #include <ZTK.h>
 #include <ZUI.h>
 
-#ifdef ZTM__OS__WINDOWS
+#ifdef ZTK_BUILD_WINDOWS
 #define HUI_FONT_WINDOW (const ZT_CHAR*)"MS Sans Serif"
 #define HUI_FONT_TITLE (const ZT_CHAR*)"Verdana"
 #define HUI_FONT_PRINTER (const ZT_CHAR*)"Courier New"
@@ -16,7 +16,7 @@
 #define HUI_FONT_WINDOW ZTK_DEFAULT_FONT
 #define HUI_FONT_TITLE ZTK_DEFAULT_FONT
 #define HUI_FONT_PRINTER ZTK_DEFAULT_FONT
-#endif // ZTM__OS__WINDOWS
+#endif // ZTK_BUILD_WINDOWS
 
 #define HUI_ID_TOGGLE 0x1
 #define HUI_ID_EXIT 0x2
