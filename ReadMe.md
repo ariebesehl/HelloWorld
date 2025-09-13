@@ -14,7 +14,8 @@ Primarily designed to reduce boiler-plate code for opening GUI-windows, it has b
 
 These four examples show its basic implementations.
 
-Fully compiled examples that include the necessary ZDK runtimes, can be downloaded [here](https://github.com/ariebesehl/HelloWorld/raw/main/__latest.zip). Extract to folder of your choice, and execute the applications.
+Fully compiled examples that include the necessary ZDK runtimes, can be downloaded [here](https://github.com/ariebesehl/HelloWorld/releases).  
+Download the latest release, extract to folder of your choice, and execute the applications.
 
 
 ## Hello Minimal
