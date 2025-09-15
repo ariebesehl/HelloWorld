@@ -7,6 +7,8 @@
 
 #include "HelloPixel.h"
 
+HP_HOST gMain;
+
 void gHP_FPS(void) {
     if (ZTK_TimeoutReset(&gMain.fps.timestamp, 1000)) {
         gMain.fps.stat = gMain.fps.counter;

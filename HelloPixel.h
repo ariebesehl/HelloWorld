@@ -27,6 +27,4 @@ typedef struct {
     } fps;
 } HP_HOST;
 
-HP_HOST gMain;
-
 #endif // HELLOPIXEL_H_INCLUDED

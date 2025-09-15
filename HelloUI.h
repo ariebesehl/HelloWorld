@@ -8,14 +8,14 @@
 #include <ZTK.h>
 #include <ZUI.h>
 
-#ifdef ZTK_BUILD_WINDOWS
-#define HUI_FONT_WINDOW (const ZT_CHAR*)"MS Sans Serif"
-#define HUI_FONT_TITLE (const ZT_CHAR*)"Verdana"
-#define HUI_FONT_PRINTER (const ZT_CHAR*)"Courier New"
-#else
-#define HUI_FONT_WINDOW ZTK_DEFAULT_FONT
-#define HUI_FONT_TITLE ZTK_DEFAULT_FONT
-#define HUI_FONT_PRINTER ZTK_DEFAULT_FONT
+#if defined(ZTK_BUILD_WINDOWS) && (ZTK_BUILD_WINDOWS)
+	#define HUI_FONT_WINDOW (const ZT_CHAR*)"MS Sans Serif"
+	#define HUI_FONT_TITLE (const ZT_CHAR*)"Verdana"
+	#define HUI_FONT_PRINTER (const ZT_CHAR*)"Courier New"
+#else // ZTK_BUILD_WINDOWS
+	#define HUI_FONT_WINDOW ZTK_DEFAULT_FONT
+	#define HUI_FONT_TITLE ZTK_DEFAULT_FONT
+	#define HUI_FONT_PRINTER ZTK_DEFAULT_FONT
 #endif // ZTK_BUILD_WINDOWS
 
 #define HUI_ID_TOGGLE 0x1
@@ -44,7 +44,5 @@ typedef struct {
         ZUI_BUTTON* exit;
     } gui;
 } HUI_HOST;
-
-HUI_HOST gMain;
 
 #endif // HELLOUI_H_INCLUDED

@@ -7,6 +7,8 @@
 
 #include "HelloUI.h"
 
+HUI_HOST gMain;
+
 void gHUI_Size(void){
     ZTK_FontSize(gMain.font.printer, ZTK_GetHeight() * 0.03333);
     ZUI_RectCenterRelative(gMain.gui.splash, 0.5, 0.5, 0.875, 0.875);

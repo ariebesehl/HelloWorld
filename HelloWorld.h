@@ -16,7 +16,11 @@
 #define HW_TEXT_INFO (const ZT_CHAR*)"Help: Press F1 or H."
 #define HW_TEXT_SIZE 18
 #define HW_TEXT_COLOR 0xffef00bf
-#define HW_TEXT_FONT (const ZT_CHAR*)"Comic Sans MS"
+#if defined(ZTK_BUILD_WINDOWS) && (ZTK_BUILD_WINDOWS)
+	#define HW_TEXT_FONT (const ZT_CHAR*)"Comic Sans MS"
+#else // ZTK_BUILD_WINDOWS
+	#define HW_TEXT_FONT ZTK_DEFAULT_FONT
+#endif // ZTK_BUILD_WINDOWS
 #define HW_LABEL_SIZE 24
 #define HW_LABEL_HELLO_WORLD (const ZT_CHAR*)"Hello, world!"
 #define HW_LABEL_HELLO_SUN (const ZT_CHAR*)"Hello, sun!"
@@ -62,8 +66,6 @@ typedef struct {
         ZT_SPRITE* space;
     } sprite;
 } HW_HOST;
-
-HW_HOST gMain;
 /*
 #ifdef __cplusplus
 extern "C" {

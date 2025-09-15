@@ -10,6 +10,8 @@
 #include <math.h>
 #define HW_2PI (2.0 * 3.141593)
 
+HW_HOST gMain;
+
 ZT_BOOL gHW_Greeting(void) {
     ZT_POINT lDistance;
     lDistance.x = (gMain.rect.world.x + gMain.rect.world.w / 2) - (gMain.rect.sun.x + gMain.rect.sun.w / 2);
