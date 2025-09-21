@@ -1,0 +1,9 @@
+{
+    "target": "./HelloMinimal",
+    "sources": ["./HelloMinimal.c"],
+	"include": ["../ZDK/ZTM", "../ZDK/ZTL", "../ZDK/ZTK"],
+	"link": ["ZTM", "ZTL", "ZTK"],
+	"flag": {
+		"extra": {"shared": ["-DZTK_BUILD_OPENGL=0x0"]}
+	}
+}
