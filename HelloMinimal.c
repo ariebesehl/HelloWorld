@@ -4,15 +4,15 @@
 ***/
 #include <ZTK.h>
 void gMainFunction(void) {
-    while (ZTK_PollMessages(NULL));
-    ZTK_DrawClear();
+	while (ZTK_PollMessages(NULL));
+	ZTK_DrawClear();
 	ZTK_DrawText((const ZT_CHAR*)"Hello World!", NULL);
-    ZTK_DrawPresent();
+	ZTK_DrawPresent();
 }
 int main(void) {
 	ZTK_New(&gMainFunction, (const ZT_CHAR*)"Hello Minimal - by ZaidaTek & Andreas Riebesehl - Compiled: " __DATE__, NULL, NULL);
 	ZTK_Open();
-    while (ZTK_Main());
+	while (ZTK_Main());
 	ZTK_Free();
-    return 0;
+	return 0;
 }
