@@ -27,22 +27,22 @@
 #define HUI_TEXT_BUTTON_EXIT (const ZT_CHAR*)"Exit"
 
 typedef struct {
-    struct {
-        ZT_INDEX counter;
-        ZT_INDEX stat;
-        ZT_TIME timestamp;
-    } fps;
-    struct {
-        ZT_FONT* window;
-        ZT_FONT* title;
-        ZT_FONT* printer;
-    } font;
-    struct {
-        ZUI_BOX* splash;
-        ZUI_LABEL* title;
-        ZUI_BUTTON* toggle;
-        ZUI_BUTTON* exit;
-    } gui;
-} HUI_HOST;
+	struct {
+		ZT_INDEX counter;
+		ZT_INDEX stat;
+		ZT_TIME timestamp;
+	} fps;
+	struct {
+		ZT_FONT* window;
+		ZT_FONT* title;
+		ZT_FONT* printer;
+	} font;
+	struct {
+		ZUI_BOX* splash;
+		ZUI_LABEL* title;
+		ZUI_BUTTON* toggle;
+		ZUI_BUTTON* exit;
+	} gui;
+} HUI_RUNTIME;
 
 #endif // HELLOUI_H_INCLUDED

@@ -16,15 +16,15 @@
 #define HP_FLAG_SHOW_HELP 0x1
 
 typedef struct {
-    ZT_SURFACE* pixels;
-    ZT_FONT* font;
-    ZT_RECT window;
-    ZT_FLAG flag;
-    struct {
-        ZT_INDEX stat;
-        ZT_INDEX counter;
-        ZT_TIME timestamp;
-    } fps;
-} HP_HOST;
+	ZT_SURFACE* pixels;
+	ZT_FONT* font;
+	ZT_RECT window;
+	ZT_FLAG flag;
+	struct {
+		ZT_INDEX stat;
+		ZT_INDEX counter;
+		ZT_TIME timestamp;
+	} fps;
+} HP_RUNTIME;
 
 #endif // HELLOPIXEL_H_INCLUDED

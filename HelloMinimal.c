@@ -3,14 +3,14 @@
 ****
 ***/
 #include <ZTK.h>
-void gMainFunction(void) {
+void gMain(void) {
 	while (ZTK_PollMessages(NULL));
 	ZTK_DrawClear();
-	ZTK_DrawText((const ZT_CHAR*)"Hello World!", NULL);
+	ZTK_DrawText(ZT_TEXT("Hello, world!"), NULL);
 	ZTK_DrawPresent();
 }
 int main(void) {
-	ZTK_New(&gMainFunction, (const ZT_CHAR*)"Hello Minimal - by ZaidaTek & Andreas Riebesehl - Compiled: " __DATE__, NULL, NULL);
+	ZTK_New(&gMain, ZT_TEXT("HelloMinimal-v" "250924"), NULL, NULL);
 	ZTK_Open();
 	while (ZTK_Main());
 	ZTK_Free();

@@ -37,35 +37,35 @@
 #define HW_FLAG_FRAMELIMIT 0x2
 
 typedef struct {
-    ZT_FLAG flag;
-    ZT_FONT* font;
-    ZT_TIMER* timer;
-    struct {
-        ZT_TIME draw;
-        ZT_TIME greet;
-    } timestamp;
-    struct {
-        ZT_INDEX stat;
-        ZT_INDEX counter;
-        ZT_TIME timestamp;
-    } fps;
-    struct {
-        ZT_RECT window;
-        ZT_RECT helloSun;
-        ZT_RECT helloWorld;
-        ZT_RECT moon;
-        ZT_RECT sun;
-        ZT_RECT world;
-    } rect;
-    struct {
-        ZT_SPRITE* moon;
-        ZT_SPRITE* sun;
-        ZT_SPRITE* world;
-        ZT_SPRITE* helloSun;
-        ZT_SPRITE* helloWorld;
-        ZT_SPRITE* space;
-    } sprite;
-} HW_HOST;
+	ZT_FLAG flag;
+	ZT_FONT* font;
+	ZT_TIMER* timer;
+	struct {
+		ZT_TIME draw;
+		ZT_TIME greet;
+	} timestamp;
+	struct {
+		ZT_INDEX stat;
+		ZT_INDEX counter;
+		ZT_TIME timestamp;
+	} fps;
+	struct {
+		ZT_RECT window;
+		ZT_RECT helloSun;
+		ZT_RECT helloWorld;
+		ZT_RECT moon;
+		ZT_RECT sun;
+		ZT_RECT world;
+	} rect;
+	struct {
+		ZT_SPRITE* moon;
+		ZT_SPRITE* sun;
+		ZT_SPRITE* world;
+		ZT_SPRITE* helloSun;
+		ZT_SPRITE* helloWorld;
+		ZT_SPRITE* space;
+	} sprite;
+} HW_RUNTIME;
 /*
 #ifdef __cplusplus
 extern "C" {
