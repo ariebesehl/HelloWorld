@@ -4,6 +4,6 @@
 	"include": ["../ZDK/ZTM", "../ZDK/ZTL", "../ZDK/ZTK"],
 	"link": ["ZTM", "ZTL", "ZTK", "xcb"],
 	"flag": {
-		"extra": {"shared": ["-DZTK_BUILD_OPENGL=0x0"]}
+		"shared": ["-DZTK_BUILD_OPENGL=0x0"]
 	}
 }
